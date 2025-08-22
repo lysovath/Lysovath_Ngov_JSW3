@@ -43,7 +43,7 @@ const cart = [
 
 // YOUR TASK 1 CODE HERE
 const product = products.find(n => n.name == "Laptop");
-console.log(product);
+console.log("Found Product:",product);
 
 /**
  * TASK 2: Filter Electronics
@@ -60,8 +60,9 @@ console.log(product);
 
 // YOUR TASK 2 CODE HERE
 const electronics = products.filter(n => n.category == "Electronics");
+console.log("Electronics Products:");
 for(let elec of electronics){
-    console.log(elec.name);
+    console.log("-",elec.name);
 }
 /**
  * TASK 3: Calculate Total Cart Price
@@ -121,4 +122,4 @@ const updatedProducts = products.map(n => {
         return n;
     }
 });
-console.log(updatedProducts);
+console.log("Updated Products:",updatedProducts);

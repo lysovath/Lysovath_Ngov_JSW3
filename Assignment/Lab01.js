@@ -77,7 +77,7 @@ console.log("User lives in:",city);
 
 // YOUR TASK 3 CODE HERE
 const {passwordHash, lastLogin, ...publicProfile} = userProfile;
-console.log(publicProfile);
+console.log("Public profile:" ,publicProfile);
 
 /**
  * TASK 4: Update Profile with Spread Operator
@@ -94,4 +94,4 @@ const updatedProfile = {
     ...userProfile,
     isOnline : false
 }
-console.log(updatedProfile);
+console.log("Updated Profile is Online?:",updatedProfile.isOnline);

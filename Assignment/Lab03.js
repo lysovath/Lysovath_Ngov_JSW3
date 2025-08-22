@@ -85,7 +85,7 @@ console.log("First Task:",firstTask);
 
 // YOUR TASK 2 CODE HERE
 const noBob = userData.filter(n => n.name != "Bob");
-console.log(noBob);
+console.log("Users other than Bob:",noBob);
 /**
  * TASK 3: Find Users with Incomplete Tasks
  *
@@ -101,6 +101,7 @@ console.log(noBob);
 
 // YOUR TASK 3 CODE HERE
 const incompletedTask = userData.filter(n => n.tasks.find(m => m.completed == false));
+console.log("Users with incomplete tasks:");
 incompletedTask.forEach(n => {
     let numOfincompleted = 0;
     n.tasks.forEach(m => {
